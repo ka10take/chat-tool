@@ -1,0 +1,124 @@
+/* チャットがめん */
+
+.chat-box {
+    width: 500px;
+    height: 800px;
+    padding: 30px;
+    background-color: #333333;
+    overflow: scroll;
+}
+
+
+/* アカウントチャット */
+
+.acount {
+    margin: 30px 0;
+    display: flex;
+}
+
+
+/* 左配置のアカウント */
+
+.acount-left {
+    flex-direction: row;
+}
+
+
+/* 右配置のアカウント */
+
+.acount-right {
+    flex-direction: row-reverse;
+}
+
+
+/* 吹き出しのベース */
+
+.ballon {
+    width: auto;
+    min-width: 100px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 20px;
+    position: relative;
+    margin: 30px;
+    color: #333333;
+    word-wrap: break-word;
+}
+
+.ballon::before,
+.ballon::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    border: 12px solid transparent;
+}
+
+
+/* 左配置の吹き出し */
+
+.acount-left .ballon {
+    background-color: #43E9F4;
+}
+
+.acount-left .ballon::before {
+    left: -24px;
+    border-right: 12px solid #43E9F4;
+}
+
+
+/* 右配置の吹き出し */
+
+.acount-right .ballon {
+    background-color: #65DE79;
+}
+
+.acount-right .ballon::after {
+    right: -24px;
+    border-left: 12px solid #65DE79;
+}
+
+
+/* アカウント情報 */
+
+.acount-info {
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* アイコン画像 */
+
+.acount-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: solid 5px red;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+/* 左配置アイコン */
+
+.acount-left .acount-icon {
+    border: solid 5px #43E9F4;
+}
+
+
+/* 右配置アイコン */
+
+.acount-right .acount-icon {
+    border: solid 5px #65DE79;
+}
+
+
+/* アカウント名 */
+
+.acount-name {
+    text-align: center;
+    color: #fff;
+    margin-top: 0.6em;
+}

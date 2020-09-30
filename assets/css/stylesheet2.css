@@ -1,0 +1,24 @@
+.alert {
+    border: 2px solid #333;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.success {
+    border-color: #494;
+    background-color: rgb(68, 153, 68, 0.3);
+}
+
+.warning {
+    border-color: #DD0;
+    background-color: rgb(221, 221, 0, 0.3);
+}
+
+.error {
+    border-color: #C44;
+    background-color: rgb(204, 68, 68, 0.3);
+}
