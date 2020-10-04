@@ -1,5 +1,5 @@
 /**
- * チャットの追加をするオブジェクト
+ * チャットの追加オブジェクト
  * @param {obj} acount - アカウント情報
  */
 var AddChat = function(acount) {
